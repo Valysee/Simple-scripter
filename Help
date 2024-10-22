@@ -1,0 +1,108 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("simple script")
+
+local KillingCheats = PhantomForcesWindow:NewSection("money")
+
+KillingCheats:CreateTextbox("Strength and money", function(Value) 
+ [1] = {
+        ["Stage"] = Value
+        ["Strength"] = "Value",
+        ["Cash"] = "Value"
+    }
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Stats:FireServer(unpack(args))
+end)
+
+KillingCheats:CreateTextbox("Get Pumpkin", function(Value) 
+  [1] = Value
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.PumpkinEvent:FireServer(unpack(args))
+end)
+
+KillingCheats:CreateTextbox("Get Candy", function(Value) 
+ [1] = Value
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.trickOrTreatcandyEvent:FireServer(unpack(args))
+end)
+
+KillingCheats:CreateButton("best tool", function() 
+  local args = {
+    [1] = "1ST ULTIMATE SUPREME CLASS"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+end)
+
+KillingCheats:CreateButton("fast lifter (game pass + free)", function() 
+local args = {
+    [1] = "FastLifter"
+}
+
+game:GetService("ReplicatedStorage").GamePassCheckEvent:FireServer(unpack(args))
+end)
+
+KillingCheats:CreateButton("Get all auras", function() 
+  local args = {
+    [1] = 0,
+    [2] = "Bat"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.CandyEvent:FireServer(unpack(args))
+    
+local args = {
+    [1] = 0,
+    [2] = "Vampire"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.CandyEvent:FireServer(unpack(args))
+    
+local args = {
+    [1] = 0,
+    [2] = "Zombie"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.CandyEvent:FireServer(unpack(args))
+    
+local args = {
+    [1] = 0,
+    [2] = "Ghost"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.CandyEvent:FireServer(unpack(args))
+    
+local args = {
+    [1] = 0,
+    [2] = "Pumpkin"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.CandyEvent:FireServer(unpack(args))
+    
+local args = {
+    [1] = 0,
+    [2] = "Goblin"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.CandyEvent:FireServer(unpack(args))
+end)
+
+local KillingCheats2 = PhantomForcesWindow:NewSection("creds")
+
+KillingCheats2:CreateButton("original poster/scripter", function() 
+  setclipboard("https://scriptblox.com/u/mehmettaha7")
+end)  
+    
+KillingCheats2:CreateButton("My tiktok feel free to follow", function() 
+ setclipboard("@Chatbypass)  
+end)  
+    
+KillingCheats2:CreateButton("discord", function() 
+ setclipboard("soon") 
+end) 
+
+KillingCheats2:CreateButtom("Get Money", function()
+setclipboard("scriptblox.com/u/SimpleScripter")
+end)
